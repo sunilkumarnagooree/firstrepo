@@ -5,6 +5,6 @@ browser.goto "https://www.bluecrossmn.com/providers/provider-medical-affairs/pha
 
  table = browser.div(class: 'views-element-container').table.tbody
  table.trs.each do |tr|
- name = tr.tds[1].text
- puts name
+ text = tr.tds[1].text
+ puts text
 end
